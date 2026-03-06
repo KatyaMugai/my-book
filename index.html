@@ -156,3 +156,93 @@
 
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio - Katya</title>
+  <style>
+    .site-header {
+      text-align: center;
+      background: #f0f4f8;
+      padding: 30px 20px;
+      margin-bottom: 20px;
+    }
+    .site-title {
+      margin: 0;
+      font-size: 3rem;
+      color: #333;
+    }
+    .site-slogan {
+      margin: 10px 0 0;
+      font-size: 1.4rem;
+      color: #666;
+    }
+    .book-title     { font-weight: bold; }
+    .author         { text-decoration: underline; }
+    .foreign-title  { font-style: italic; }
+    .book-cover {
+      width: 200px;
+      height: 250px;
+      object-fit: cover;
+      border: 4px solid #444;
+      border-radius: 10px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.25);
+      margin: 20px auto;
+      display: block;
+      transition: transform 0.3s ease;
+    }
+    .book-cover:hover {
+      transform: scale(1.05);
+      cursor: pointer;
+    }
+    a {
+      color: #0066cc;          /* blue link color */
+      text-decoration: none;   /* remove underline by default */
+    }
+    a:hover {
+      text-decoration: underline;  /* underline on hover for feedback */
+      color: #004080;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <h1 class="site-title">Romanzo Animal Farm</h1>
+    <p class="site-slogan">Book by George Orwell</p>
+  </header>
+
+  <p>
+    The book 
+    <a href="https://en.wikipedia.org/wiki/Animal_Farm" target="_blank" rel="noopener noreferrer">
+      <span class="book-title">Animal Farm</span>
+    </a> 
+    was written by 
+    <a href="https://en.wikipedia.org/wiki/George_Orwell" target="_blank" rel="noopener noreferrer">
+      <span class="author">George Orwell</span>
+    </a>.
+    In French, it is known as 
+    <span class="foreign-title">La Ferme des animaux</span>.
+  </p>
+
+  <!-- Another example: link on a phrase -->
+  <p>
+    <a href="https://www.george-orwell.org/Animal_Farm" target="_blank" rel="noopener noreferrer">
+      Read the full text of Animal Farm online for free
+    </a>.
+  </p>
+
+  <!-- Your clickable image from before -->
+  <a href="https://en.wikipedia.org/wiki/Animal_Farm" target="_blank" rel="noopener noreferrer">
+    <img
+      src="https://m.media-amazon.com/images/I/81TbBuiWk8L._AC_UF1000,1000_QL80_.jpg"
+      alt="Cover of Animal Farm by George Orwell – click for more info"
+      title="Learn more about Animal Farm on Wikipedia"
+      class="book-cover"
+    >
+  </a>
+
+</body>
+</html>
